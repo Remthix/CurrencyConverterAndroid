@@ -1,4 +1,4 @@
-package com.sdremthix.currencyconverter
+package com.sdremthix.currencyconverter.ui.activities
 
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.assertion.ViewAssertions.doesNotExist
@@ -15,7 +15,7 @@ import org.junit.runner.RunWith
  * The Main view component testing suite.
  */
 @RunWith(AndroidJUnit4ClassRunner::class)
-class MainActivityTest {
+class MainActivityTest : BaseActivity() {
 
     @get:Rule
     val mMainActivityScenarioRule = ActivityScenarioRule(MainActivity::class.java)
