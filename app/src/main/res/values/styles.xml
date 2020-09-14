@@ -46,4 +46,25 @@
         <item name="android:orientation">horizontal</item>
     </style>
 
+    <!--    Text-->
+    <style name="text_small" parent="block">
+        <item name="android:textSize">@dimen/txt_size_14</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--    Images-->
+    <style name="image_small">
+        <item name="android:layout_width">@dimen/size_24</item>
+        <item name="android:layout_height">@dimen/size_24</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+
+    <!--    Progress bar-->
+    <style name="progress">
+        <item name="android:layout_width">@dimen/size_42</item>
+        <item name="android:layout_height">@dimen/size_42</item>
+        <item name="android:indeterminate">true</item>
+    </style>
+
 </resources>
