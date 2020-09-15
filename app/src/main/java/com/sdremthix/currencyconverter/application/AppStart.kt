@@ -1,6 +1,7 @@
 package com.sdremthix.currencyconverter.application
 
 import android.app.Application
+import com.sdremthix.currencyconverter.components.ApplicationComponent
 import com.sdremthix.currencyconverter.components.DaggerApplicationComponent
 
 /**
@@ -9,7 +10,7 @@ import com.sdremthix.currencyconverter.components.DaggerApplicationComponent
  */
 class AppStart : Application() {
 
-    val applicationComponent = DaggerApplicationComponent.create()
+    val applicationComponent: ApplicationComponent = DaggerApplicationComponent.create()
 
     override fun onCreate() {
         super.onCreate()
